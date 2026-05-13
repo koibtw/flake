@@ -1,0 +1,43 @@
+{ pkgs, ... }:
+
+{
+  systemd.services.lebel = {
+    description = "lebel";
+    after = [ "network.target" ];
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.nodejs ];
+
+    serviceConfig = {
+      User = "koi";
+      Group = "users";
+      ExecStart = "${pkgs.nodejs}/bin/node --env-file /var/lebel/.env /var/lebel/build/main.js";
+      WorkingDirectory = "/var/lebel";
+      Restart = "on-failure";
+      RestartSec = 10;
+    };
+  };
+
+  services.nginx.virtualHosts."lebel.ebil.club" = {
+    locations = {
+      "= /".return = "301 https://ebil.club";
+      "/" = {
+        proxyPass = "http://127.0.0.1:14831";
+        extraConfig = ''
+          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header X-Forwarded-Proto $scheme;
+          proxy_set_header X-Real-IP $remote_addr;
+          proxy_set_header Host $host;
+
+          proxy_http_version 1.1;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection "upgrade";
+        '';
+      };
+    };
+    forceSSL = true;
+    sslCertificate = "/run/agenix/ssl-ebil-cert";
+    sslCertificateKey = "/run/agenix/ssl-ebil-key";
+  };
+
+  systemd.tmpfiles.rules = [ "d /var/lebel 2750 koi users -" ];
+}

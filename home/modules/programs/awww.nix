@@ -1,0 +1,3 @@
+{
+  services.awww.enable = true;
+}
