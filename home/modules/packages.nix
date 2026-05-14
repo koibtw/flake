@@ -13,6 +13,8 @@
 
     signal-desktop
 
+    inkscape
+
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
