@@ -12,6 +12,13 @@
     owner = "tranquil-pds";
   };
 
+  nix.settings = {
+    substituters = [ "https://tranquil.cachix.org" ];
+    trusted-public-keys = [
+      "tranquil.cachix.org-1:PoO+mGL6a6LcJiPakMDHN4E218/ei/7v2sxeDtNkSRg="
+    ];
+  };
+
   services.tranquil-pds = {
     enable = true;
     database.createLocally = true;
