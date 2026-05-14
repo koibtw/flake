@@ -16,6 +16,16 @@ function nixpkgs-review-gha() {
   gh workflow run 'review.yml' -R "$(gh api user --jq '.login')/nixpkgs-review-gha" -f pr="$1"
 }
 
+function treewatch() {
+  local excludei='.git|.jj|.zig-cache|zig-out|target|result|bin|build|dist|node_modules'
+
+  while true; do
+    inotifywait -qP --excludei "$excludei" -e modify,create,delete -r "$@" && \
+      clear && \
+      eza --tree
+  done
+}
+
 function cd() {
   { z "$@" 2>/dev/null && eza --no-quotes --group-directories-first --icons=auto; } || {
     echo "dir \e[91m$*\e[0m not found!! \e[91mSTUPID! BONK!\e[0m :3"
