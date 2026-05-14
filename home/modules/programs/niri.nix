@@ -8,7 +8,6 @@ in
   home.sessionVariables = {
     XDG_BACKEND = "wayland";
     NIXOS_OZONE_WL = "1";
-    PROTON_ENABLE_WAYLAND = "1";
   };
 
   programs.niri.settings = {
