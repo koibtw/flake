@@ -61,18 +61,26 @@ function precmd() {
   fi
 
   if [[ -z "$vcs_info_msg_0_" ]]; then
-    if [[ -n "$nix_shell" ]]; then
-      PROMPT="${nix_shell}${newline}${baseprompt}"
-    else
-      PROMPT="${baseprompt}"
-    fi
-  elif [[ -n "$(git diff --cached --name-status 2>/dev/null)" ]]; then
-    PROMPT="${vcs_info_msg_0_}${reset} COMMIT ${nix_shell} ${newline}${baseprompt}"
-  elif [[ -n "$(git diff --name-status 2>/dev/null)" ]]; then
-    PROMPT="${vcs_info_msg_0_}${reset} DIRTY ${nix_shell} ${newline}${baseprompt}"
+    PROMPT=""
   else
-    PROMPT="${vcs_info_msg_0_} ${nix_shell}${newline}${baseprompt}"
+    if [[ -n "$(git diff --cached --name-status 2>/dev/null)" ]]; then
+      PROMPT="${vcs_info_msg_0_}${reset} ! "
+    elif [[ -n "$(git diff --name-status 2>/dev/null)" ]]; then
+      PROMPT="${vcs_info_msg_0_}${reset} !! "
+    else
+      PROMPT="${vcs_info_msg_0_} "
+    fi
   fi
+
+  if [[ -n "$nix_shell" ]]; then
+    PROMPT+="${nix_shell}"
+  fi
+
+  if [[ -n "$PROMPT" ]]; then
+    PROMPT+="${newline}"
+  fi
+
+  PROMPT+="${baseprompt}"
 
   printf '\e[5 q'
 }
