@@ -5,6 +5,7 @@
     ./console.nix
     ./nixpkgs.nix
     ./environment.nix
+    ./virtualisation.nix
     ./evergarden.nix
     ./users.nix
     ./programs

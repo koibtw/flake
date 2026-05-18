@@ -20,6 +20,7 @@
     noto-fonts-color-emoji
     maple-mono.NF
 
+    inotify-tools
     wl-clipboard
 
     kitget
