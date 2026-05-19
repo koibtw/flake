@@ -14,6 +14,7 @@
     signal-desktop
 
     inkscape
+    gimp
 
     noto-fonts
     noto-fonts-cjk-sans
