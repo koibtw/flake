@@ -10,11 +10,9 @@ in
   "email-pass-me.age".publicKeys = [ koi ];
   "email-pass-noreply.age".publicKeys = [ koi ];
 
-  "tailscale-auth.age".publicKeys = [
-    koi
-    seber
-  ];
+  "tailscale-auth.age".publicKeys = [ koi seber ];
 
+  "beszel.env.age".publicKeys = [ seber ];
   "vaultwarden.env.age".publicKeys = [ seber ];
   "ssl-koi.cert.pem.age".publicKeys = [ seber ];
   "ssl-koi.key.pem.age".publicKeys = [ seber ];

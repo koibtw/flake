@@ -1,7 +1,7 @@
 {
   imports = [
-    ./tailscale.nix
     ./nginx.nix
+    ./beszel.nix
     ./website.nix
     ./junesite.nix
     ./lebel.nix

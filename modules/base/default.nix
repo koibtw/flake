@@ -15,6 +15,4 @@
     ./programs
     ./services
   ];
-
-  age.secrets.tailscale-auth.file = ../../secrets/tailscale-auth.age;
 }
