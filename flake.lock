@@ -98,11 +98,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1774196652,
-        "narHash": "sha256-zC5ZWLdLpQr4AuBqCXG4jWN8f0hVNqvSIQZj7z8cX3Q=",
+        "lastModified": 1779191906,
+        "narHash": "sha256-K2eSYy96Y1cNpKBQFoYdVvgTx48K4v7NTroq8AGVWQg=",
         "ref": "refs/heads/main",
-        "rev": "62b778dbdffc0fc7a9506ac891c8a8ea688b6ab8",
-        "revCount": 81,
+        "rev": "32ec084388dafd63bff3e2d3120b058cdce759cc",
+        "revCount": 83,
         "type": "git",
         "url": "https://codeberg.org/evergarden/nix"
       },
