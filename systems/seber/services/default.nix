@@ -7,7 +7,6 @@
     ./lebel.nix
     ./mimi.nix
     ./robin.nix
-    ./pvzge.nix
     ./vaultwarden.nix
     ./ebil-club.nix
   ];
