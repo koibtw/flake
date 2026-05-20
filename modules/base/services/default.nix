@@ -3,5 +3,6 @@
     ./openssh.nix
     ./davfs2.nix
     ./tailscale.nix
+    ./beszel-agent.nix
   ];
 }

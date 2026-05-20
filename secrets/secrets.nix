@@ -11,6 +11,7 @@ in
   "email-pass-noreply.age".publicKeys = koi;
 
   "tailscale-auth.age".publicKeys = koi ++ seber;
+  "beszel-token.age".publicKeys = koi ++ seber;
 
   "beszel.env.age".publicKeys = seber;
   "vaultwarden.env.age".publicKeys = seber;

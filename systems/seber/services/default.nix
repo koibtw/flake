@@ -1,7 +1,7 @@
 {
   imports = [
     ./nginx.nix
-    ./beszel.nix
+    ./beszel-hub.nix
     ./website.nix
     ./junesite.nix
     ./lebel.nix
