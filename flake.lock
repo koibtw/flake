@@ -36,11 +36,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779150314,
-        "narHash": "sha256-yKdZwc7U8MbUNhpz3xRhJ9DiIZJQQFcQfx/i5WHGaMk=",
+        "lastModified": 1779751149,
+        "narHash": "sha256-6ZsfO0iZFjKuIDrSKnzSOSKN7G6wIWzm8JerjeQqv30=",
         "ref": "refs/heads/main",
-        "rev": "a87965d32906b8f7a874680dbc76aa679caff82f",
-        "revCount": 77,
+        "rev": "26e62b69f3f345457075751bed3aaa0bdfaeb2f3",
+        "revCount": 79,
         "type": "git",
         "url": "https://git.koi.rip/koi/anvim"
       },
