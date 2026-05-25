@@ -26,7 +26,7 @@ the Apache License, Version 2.0 ([LICENSE](./LICENSE)) unless specified otherwis
 the [wallpaper](./external/wallpaper.png) is a color-shifted version of a photo of a log by
 [Nunikii](https://nunikii.ebil.club), which is licensed under
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) and can be found at
-<https://nunikii.ebil.club/photos#p0-2>
+<https://nunikii.ebil.club/photos#p0-3>
 
 <br>
 
