@@ -17,7 +17,12 @@ local newline=$'\n'
 
 zstyle ':vcs_info:git*' hooks git-strip-heads
 function +vi-git-strip-heads() {
-  hook_com[branch]=${hook_com[branch]#heads/}
+  if [[ "${hook_com[branch]:0:8}" == "jj/keep/" ]]; then
+    hook_com[branch]=${hook_com[branch]#jj/keep/}
+    hook_com[branch]=${hook_com[branch]:0:8}
+  else
+    hook_com[branch]=${hook_com[branch]#heads/}
+  fi
 }
 
 zstyle ':vcs_info:*' formats "${dim}%s( ${accent}%b${reset}${dim} )"
