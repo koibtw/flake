@@ -60,6 +60,8 @@ in
     };
 
     initContent = ''
+      setopt interactivecomments
+
       source ${external}/keymap.zsh
       source ${external}/prompt.zsh
       source ${external}/functions.zsh
