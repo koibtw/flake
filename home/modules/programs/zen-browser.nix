@@ -11,14 +11,8 @@
       isDefault = true;
       search = {
         force = true;
-        default = "searxng";
+        default = "ddg";
         engines = {
-          searxng = {
-            name = "4get";
-            definedAliases = [ "@4get" ];
-            urls = [ { template = "https://search.nelliel.cv/web?s={searchTerms}"; } ];
-            iconMapObj."32" = "https://search.nelliel.cv/favicon.ico";
-          };
           alpine = {
             name = "Aplpine Packages";
             definedAliases = [ "@alpine" ];
