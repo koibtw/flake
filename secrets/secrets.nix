@@ -5,6 +5,7 @@ in
 {
   "libera-password.age".publicKeys = koi;
   "jellyfin-rpc.json.age".publicKeys = koi;
+  "washing-machien.env.age".publicKeys = koi;
   "cloudflared.pem.age".publicKeys = koi;
   "tranquil.env.age".publicKeys = koi;
 

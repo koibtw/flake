@@ -6,5 +6,6 @@
     ./cloudflared.nix
     ./tranquil-pds.nix
     ./seberjune.nix
+    ./washing-machien.nix
   ];
 }

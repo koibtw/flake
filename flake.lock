@@ -300,6 +300,7 @@
         "seberjune": "seberjune",
         "systems": "systems",
         "tranquil-pds": "tranquil-pds",
+        "washing-machien": "washing-machien",
         "zen-browser": "zen-browser"
       }
     },
@@ -356,6 +357,26 @@
       "original": {
         "type": "git",
         "url": "https://tangled.org/did:web:tranquil.tranquil.farm/tranquil-pds"
+      }
+    },
+    "washing-machien": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1780539720,
+        "narHash": "sha256-i6PFqIUrelYBc0tbLk7dijbjm468uftlABHLKRcYO78=",
+        "ref": "refs/heads/main",
+        "rev": "b981d1e78fb8ff8b6700d56e526081debec95100",
+        "revCount": 31,
+        "type": "git",
+        "url": "https://tangled.org/did:plc:nz5npphohxgjo2blfipdatam/washing-machien"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://tangled.org/did:plc:nz5npphohxgjo2blfipdatam/washing-machien"
       }
     },
     "xwayland-satellite-stable": {
