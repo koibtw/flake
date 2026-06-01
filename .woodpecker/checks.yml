@@ -12,4 +12,5 @@ steps:
     commands:
       - echo 'experimental-features = flakes nix-command' >> /etc/nix/nix.conf
       - nix fmt   --inputs-from .
-      - nix shell --inputs-from . nixpkgs#git -c git diff --exit-code
+      - nix shell --inputs-from . nixpkgs#git nixpkgs#gnugrep nixpkgs#gawk -c git diff -- . \
+        "\$(grep filter=lfs .gitattributes | awk '{print :(exclude) \$1}')"
