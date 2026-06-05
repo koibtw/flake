@@ -7,6 +7,7 @@
     ./fzf.nix
     ./zsh.nix
     ./aerc.nix
+    ./halloy.nix
     ./direnv.nix
     ./zoxide.nix
     ./neovim.nix
