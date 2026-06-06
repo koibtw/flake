@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     nix-output-monitor
-    jellyfin-desktop
+    jellyfin-mpv-shim
     jellyfin-tui
     prettyping
     playerctl
