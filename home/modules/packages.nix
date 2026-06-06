@@ -11,6 +11,7 @@
     gh
     codeberg-cli
 
+    mumble
     signal-desktop
 
     inkscape
