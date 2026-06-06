@@ -70,6 +70,10 @@ in
       source <(${pkgs.fzf}/bin/fzf --zsh)
       source <(COMPLETE=zsh ${pkgs.jujutsu}/bin/jj)
 
+      if [[ -f /etc/motd ]] && [[ ! -o login ]]; then
+        motd || true
+      fi
+
       cuteff
     '';
 
