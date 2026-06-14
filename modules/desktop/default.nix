@@ -4,6 +4,7 @@
     ./boot.nix
     ./console.nix
     ./nixpkgs.nix
+    ./security.nix
     ./environment.nix
     ./virtualisation.nix
     ./evergarden.nix
