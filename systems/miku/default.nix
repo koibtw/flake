@@ -36,6 +36,7 @@
         dolphin
         ppsspp
         beetle-psx
+        mupen64plus
       ]
     ))
   ];
