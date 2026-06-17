@@ -12,6 +12,7 @@
     ./modules/age.nix
     ./modules/theme.nix
     ./modules/packages.nix
+    ./modules/wayland
     ./modules/programs
 
     inputs.evergarden.homeManagerModules.default

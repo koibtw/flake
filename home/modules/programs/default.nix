@@ -15,8 +15,6 @@
     ./jujutsu.nix
     ./jellyfin-rpc.nix
 
-    ./niri.nix
-
     ./awww.nix
     ./rofi.nix
     ./foot.nix
