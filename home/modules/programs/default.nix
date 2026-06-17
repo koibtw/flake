@@ -11,6 +11,7 @@
     ./direnv.nix
     ./zoxide.nix
     ./neovim.nix
+    ./meowtd.nix
     ./cuteff.nix
     ./jujutsu.nix
     ./jellyfin-rpc.nix

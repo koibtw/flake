@@ -20,6 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    meowtd = {
+      url = "git+https://git.koi.rip/koi/meowtd.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     seberjune = {
       url = "git+https://git.koi.rip/koi/seberjune.git";
       inputs.nixpkgs.follows = "nixpkgs";
