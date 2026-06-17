@@ -22,10 +22,10 @@
     ];
   };
 
-  environment.systemPackages = with pkgs; [
-    linuxquota
-    vim
-    htop
+  environment.systemPackages = [
+    pkgs.linuxquota
+    pkgs.vim
+    pkgs.htop
   ];
 
   system.activationScripts.quotas = {

@@ -1,30 +1,29 @@
 { pkgs, ... }:
-
 {
-  home.packages = with pkgs; [
-    nix-output-monitor
-    jellyfin-mpv-shim
-    jellyfin-tui
-    prettyping
-    playerctl
-    jq
-    gh
-    codeberg-cli
+  home.packages = [
+    pkgs.nix-output-monitor
+    pkgs.jellyfin-mpv-shim
+    pkgs.jellyfin-tui
+    pkgs.prettyping
+    pkgs.playerctl
+    pkgs.jq
+    pkgs.gh
+    pkgs.codeberg-cli
 
-    mumble
-    signal-desktop
+    pkgs.mumble
+    pkgs.signal-desktop
 
-    inkscape
-    gimp
+    pkgs.inkscape
+    pkgs.gimp
 
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-color-emoji
-    maple-mono.NF
+    pkgs.noto-fonts
+    pkgs.noto-fonts-cjk-sans
+    pkgs.noto-fonts-color-emoji
+    pkgs.maple-mono.NF
 
-    inotify-tools
-    wl-clipboard
+    pkgs.inotify-tools
+    pkgs.wl-clipboard
 
-    kitget
+    pkgs.kitget
   ];
 }

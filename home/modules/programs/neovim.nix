@@ -8,14 +8,14 @@
     defaultEditor = true;
   };
 
-  home.packages = with pkgs; [
-    bash-language-server
-    vscode-langservers-extracted # css, eslint, html, json
-    just-lsp
-    lua-language-server
-    nixd
-    tombi
-    yaml-language-server
+  home.packages = [
+    pkgs.bash-language-server
+    pkgs.vscode-langservers-extracted # css, eslint, html, json
+    pkgs.just-lsp
+    pkgs.lua-language-server
+    pkgs.nixd
+    pkgs.tombi
+    pkgs.yaml-language-server
   ];
 
   home.sessionVariables.MANPAGER = "nvim +Man!";

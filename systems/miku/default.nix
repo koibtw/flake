@@ -21,9 +21,9 @@
     layout = "us";
   };
 
-  environment.systemPackages = with pkgs; [
-    prismlauncher
-    (retroarch.withCores (
+  environment.systemPackages = [
+    pkgs.prismlauncher
+    (pkgs.retroarch.withCores (
       cores: with cores; [
         gpsp
         gambatte

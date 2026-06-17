@@ -1,7 +1,6 @@
 { pkgs, ... }:
-
 {
-  home.packages = with pkgs; [ jellyfin-rpc ];
+  home.packages = [ pkgs.jellyfin-rpc ];
 
   age.secrets.jellyfin-rpc.file = ../../../secrets/jellyfin-rpc.json.age;
 

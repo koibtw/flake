@@ -1,8 +1,7 @@
 { pkgs, ... }:
-
 {
-  environment.systemPackages = with pkgs; [
-    dnsmasq
-    htop
+  environment.systemPackages = [
+    pkgs.dnsmasq
+    pkgs.htop
   ];
 }

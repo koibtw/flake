@@ -8,7 +8,7 @@ let
   colors = inputs.evergarden.lib.util.mkPalette config.evergarden;
 in
 {
-  home.packages = with pkgs; [ libnotify ];
+  home.packages = [ pkgs.libnotify ];
   services.dunst = {
     enable = true;
     settings = {
