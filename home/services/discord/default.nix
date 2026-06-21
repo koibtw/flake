@@ -1,7 +1,7 @@
 {
   imports = [
+    ./arrpc.nix
     ./jellyfin-rpc.nix
-    ./user-desktop.nix
     ./vita-presence.nix
   ];
 }

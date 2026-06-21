@@ -6,7 +6,7 @@ in
   programs.vesktop = {
     enable = true;
     settings = {
-      arRPC = true;
+      arRPC = false;
       splashBackground = "#${colors.base}";
       splashColor = "#${colors.text}";
       splashTheming = true;
@@ -19,6 +19,7 @@ in
           "https://everviolet.github.io/discord/themes/evergarden-${config.evergarden.variant}-${config.evergarden.accent}.theme.css"
         ];
         plugins = {
+          "WebRichPresence (arRPC)".enabled = true;
           AlwaysExpandRoles.enabled = true;
           AlwaysTrust = {
             enabled = true;

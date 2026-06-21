@@ -7,16 +7,13 @@
   systemd.user.services.jellyfin-rpc = {
     Unit = {
       Description = "jellyfin discord RPC";
-      After = [ "network.target" ];
+      After = [ "arRPC.service" ];
     };
 
     Service = {
-      ExecStart = "${pkgs.jellyfin-rpc}/bin/jellyfin-rpc -c /run/user/%U/agenix/jellyfin-rpc";
+      ExecStart = "${pkgs.jellyfin-rpc}/bin/jellyfin-rpc -c %t/agenix/jellyfin-rpc";
       Restart = "on-failure";
       RestartSec = 60;
     };
-
-    # started by user-desktop.target
-    # Install.WantedBy = [ "default.target" ];
   };
 }
