@@ -14,7 +14,10 @@
     ./meowtd.nix
     ./cuteff.nix
     ./jujutsu.nix
+
+    ./user-desktop.nix
     ./jellyfin-rpc.nix
+    ./vita-presence.nix
 
     ./awww.nix
     ./rofi.nix

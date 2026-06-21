@@ -16,7 +16,7 @@
       RestartSec = 60;
     };
 
-    # started manually with desktop session
+    # started by user-desktop.target
     # Install.WantedBy = [ "default.target" ];
   };
 }
