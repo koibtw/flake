@@ -2,15 +2,15 @@
 let
   name = "vita-presence-the-server";
   package = pkgs.callPackage ./vita-presence-package.nix { };
-  config = pkgs.runCommand "vita-presence-config" {} ''
-    mkdir -p $out
-    cat > $out/${name}.ini <<'EOF'
-[General]
-appID = 1509590848625578226
-vitaIP = 192.168.55.180
-updateTimer = 5000
-vitaTimeout = 5000
-EOF
+  config = pkgs.runCommand "vita-presence-config" { } ''
+        mkdir -p $out
+        cat > $out/${name}.ini <<'EOF'
+    [General]
+    appID = 1509590848625578226
+    vitaIP = 192.168.55.180
+    updateTimer = 5000
+    vitaTimeout = 5000
+    EOF
   '';
 in
 {

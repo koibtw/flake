@@ -1,8 +1,8 @@
 let
-  configs = ../../external/config;
-  scripts = ../../external/scripts;
-  cargoConfig = ../../external/cargo.toml;
-  npmConfig = ../../external/npmrc;
+  configs = ./config;
+  scripts = ./scripts;
+  cargoConfig = ./files/cargo.toml;
+  npmConfig = ./files/npmrc;
 in
 {
   home.file = builtins.listToAttrs (

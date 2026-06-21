@@ -65,7 +65,7 @@
           remoteBranch = "magenta";
         };
 
-        commit.template = toString ../../../external/gitmessage.txt;
+        commit.template = toString ../../external/files/gitmessage.txt;
         init.defaultBranch = "main";
       };
     };

@@ -64,7 +64,7 @@
             builtin_draft_commit_description,
             "${
               builtins.replaceStrings [ "# " " at " ] [ "JJ: " "@" ] (
-                builtins.readFile ../../../external/gitmessage.txt
+                builtins.readFile ../../external/files/gitmessage.txt
               )
             }",
             "\nJJ: ignore-rest\n",

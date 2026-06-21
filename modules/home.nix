@@ -13,6 +13,6 @@
         inputs
         ;
     }; # TODO: optimize maybe
-    users.koi = import ../home/koi.nix;
+    users.koi = import ../home;
   };
 }

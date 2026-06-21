@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  external = ../../../external/zsh;
+  external = ../../external/zsh;
 in
 {
   home.shell.enableZshIntegration = true;

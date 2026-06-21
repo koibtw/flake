@@ -67,7 +67,7 @@
         "media.videocontrols.picture-in-picture.video-toggle.enabled" = true;
         "layout.css.prefers-color-scheme.content-override" = 0; # dark mode
       };
-      userChrome = builtins.readFile ../../../external/userChrome.css;
+      userChrome = builtins.readFile ../../external/files/userChrome.css;
       keyboardShortcutsVersion = 19;
       keyboardShortcuts = [
         {

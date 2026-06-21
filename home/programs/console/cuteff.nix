@@ -1,5 +1,4 @@
 { inputs, ... }:
-
 {
   imports = [ inputs.cuteff.homeManagerModules.default ];
   programs.cuteff = {

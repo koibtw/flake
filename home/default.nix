@@ -7,13 +7,14 @@
   };
 
   imports = [
-    ./modules/external.nix
-    ./modules/xdg.nix
-    ./modules/age.nix
-    ./modules/theme.nix
-    ./modules/packages.nix
-    ./modules/wayland
-    ./modules/programs
+    ./xdg.nix
+    ./age.nix
+    ./theme.nix
+    ./packages.nix
+    ./external
+    ./wayland
+    ./programs
+    ./services
 
     inputs.evergarden.homeManagerModules.default
   ];
