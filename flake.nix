@@ -51,11 +51,6 @@
       };
     };
 
-    tranquil-pds = {
-      url = "git+https://tangled.org/did:web:tranquil.tranquil.farm/tranquil-pds";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     washing-machien = {
       url = "git+https://tangled.org/did:plc:nz5npphohxgjo2blfipdatam/washing-machien";
       inputs.nixpkgs.follows = "nixpkgs";

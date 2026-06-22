@@ -7,7 +7,6 @@ in
   "jellyfin-rpc.json.age".publicKeys = koi;
   "washing-machien.env.age".publicKeys = koi;
   "cloudflared.pem.age".publicKeys = koi;
-  "tranquil.env.age".publicKeys = koi;
 
   "email-pass-me.age".publicKeys = koi;
   "email-pass-noreply.age".publicKeys = koi;

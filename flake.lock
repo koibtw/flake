@@ -320,7 +320,6 @@
         "nixpkgs": "nixpkgs",
         "seberjune": "seberjune",
         "systems": "systems",
-        "tranquil-pds": "tranquil-pds",
         "washing-machien": "washing-machien",
         "zen-browser": "zen-browser"
       }
@@ -358,26 +357,6 @@
         "owner": "nix-systems",
         "repo": "default",
         "type": "github"
-      }
-    },
-    "tranquil-pds": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1780656565,
-        "narHash": "sha256-K+Xxn/CD6c2c18wPteWm6EUknWHIKBB+2JFQcf6zW5Y=",
-        "ref": "refs/heads/main",
-        "rev": "cd7e01100eae142806373e84a9006b103c80f18e",
-        "revCount": 412,
-        "type": "git",
-        "url": "https://tangled.org/did:web:tranquil.tranquil.farm/tranquil-pds"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://tangled.org/did:web:tranquil.tranquil.farm/tranquil-pds"
       }
     },
     "washing-machien": {
