@@ -3,10 +3,12 @@ let
   metadata = {
     realname = "june";
     metadata = {
+      avatar = "https://koi.rip/img/silly/pfp.png";
       color = "#cbe3b3";
       display-name = "june";
       homepage = "https://koi.rip";
       pronouns = "they/them";
+      status = "meowing :3";
     };
   };
 in
@@ -21,6 +23,7 @@ in
         family = "Maple Mono NF";
       };
       display = {
+        adapt_metadata_colors = "all";
         decode_urls = true;
         nickname = [
           "display-name"
