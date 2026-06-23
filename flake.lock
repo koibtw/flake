@@ -181,11 +181,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781799467,
-        "narHash": "sha256-gbqIguahFHw1LKxIxMyYF1zx4MSPwApU9QW4+f28EPA=",
+        "lastModified": 1782301706,
+        "narHash": "sha256-b/XG4Wg5oVJlySZOC4cmWnKMeDTtp/Hm9swWDTGAUf0=",
         "ref": "refs/heads/main",
-        "rev": "9dacdce95796c3dccfe5b1c54b6b36cad8566616",
-        "revCount": 27,
+        "rev": "07e2c4304128392e1a61e0affa0edbbdb9af9ca8",
+        "revCount": 38,
         "type": "git",
         "url": "https://git.koi.rip/koi/meowtd.git"
       },
