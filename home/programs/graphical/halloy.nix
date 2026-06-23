@@ -12,6 +12,7 @@ let
 in
 {
   age.secrets.irc-password.file = ../../../secrets/irc-password.age;
+  evergarden.halloy.enable = true;
   programs.halloy = {
     enable = true;
     settings = {
