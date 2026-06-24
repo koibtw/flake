@@ -46,17 +46,6 @@ in
       ls = "eza";
       ll = "eza -lg";
       la = "eza -lga";
-
-      gap = "git add --patch";
-      ga = "git add";
-      gc = "git commit --edit -S";
-      gp = "git push origin";
-      gb = "git branch";
-      gl = "git log";
-      gd = "git diff";
-      gco = "git checkout";
-      gpull = "git pull origin";
-      gmain = "if ! git checkout --track origin/main; then if ! git checkout main; then git checkout master; fi; fi";
     };
 
     initContent = ''
