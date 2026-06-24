@@ -1,0 +1,23 @@
+FROM alpine:3.24
+
+RUN addgroup -g 1001 meower && adduser -u 1001 -h /home/meower -DG meower meower \
+  && apk add --no-cache doas alpine-sdk \
+  && echo 'permit nopass meower' > /etc/doas.conf \
+  && addgroup meower abuild
+
+USER meower
+WORKDIR /home/meower
+
+RUN cat > /home/meower/.profile <<EOF
+if [ -z "\$(ls -A /home/meower/.abuild/*.rsa 2>/dev/null)" ]; then
+  echo 'running abuild-keygen'
+  abuild-keygen -ain
+fi
+
+if [ -z "\$(ls -A /var/cache/apk 2>/dev/null)" ]; then
+  echo 'running apk update'
+  doas apk update
+fi
+EOF
+
+ENTRYPOINT ["/bin/ash", "-l"]
