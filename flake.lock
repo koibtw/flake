@@ -30,17 +30,16 @@
     "anvim": {
       "inputs": {
         "gift-wrap": "gift-wrap",
-        "neovim-nightly": "neovim-nightly",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1779751149,
-        "narHash": "sha256-6ZsfO0iZFjKuIDrSKnzSOSKN7G6wIWzm8JerjeQqv30=",
+        "lastModified": 1782384993,
+        "narHash": "sha256-6NgTb5iwLjoWTE1MEQg2bGefk8qajX71QV5Me3/dkvg=",
         "ref": "refs/heads/main",
-        "rev": "26e62b69f3f345457075751bed3aaa0bdfaeb2f3",
-        "revCount": 79,
+        "rev": "b553ed6a20d28d786f3e37f7ed0027d3e6d858a0",
+        "revCount": 88,
         "type": "git",
         "url": "https://git.koi.rip/koi/anvim"
       },
@@ -111,28 +110,6 @@
         "url": "https://codeberg.org/evergarden/nix"
       }
     },
-    "flake-parts": {
-      "inputs": {
-        "nixpkgs-lib": [
-          "anvim",
-          "neovim-nightly",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1778716662,
-        "narHash": "sha256-m1Yf0wZ8j1OHjTc2UwHwyQRSnNeSgLJOd7q5Y45hzi4=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "f7c1a2d347e4c52d5fb8d10cb4d94b5884e546fb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "type": "github"
-      }
-    },
     "gift-wrap": {
       "inputs": {
         "nixpkgs": [
@@ -192,45 +169,6 @@
       "original": {
         "type": "git",
         "url": "https://git.koi.rip/koi/meowtd.git"
-      }
-    },
-    "neovim-nightly": {
-      "inputs": {
-        "flake-parts": "flake-parts",
-        "neovim-src": "neovim-src",
-        "nixpkgs": [
-          "anvim",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1779149084,
-        "narHash": "sha256-ICMEkFOJMI0oOxf23fXWGQzYXNO+tw2i/X8Mdx8kfq8=",
-        "owner": "nix-community",
-        "repo": "neovim-nightly-overlay",
-        "rev": "e3a2a96eb3673ab4292c6d3731794615059f6fa9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "neovim-nightly-overlay",
-        "type": "github"
-      }
-    },
-    "neovim-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1779124106,
-        "narHash": "sha256-sLGjo9u3ojqH2aVjcpuExVvgJcNeKtsR962twipxzFM=",
-        "owner": "neovim",
-        "repo": "neovim",
-        "rev": "450ba41436b6f9a94c7519339a0bdff8dfbf66a9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "neovim",
-        "repo": "neovim",
-        "type": "github"
       }
     },
     "niri": {
