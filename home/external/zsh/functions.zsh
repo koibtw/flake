@@ -32,6 +32,10 @@ function motd() {
   echo -ne '\e[0m'
 }
 
+function alpine() {
+  podman run -it "$@" meowpine
+}
+
 function cd() {
   { z "$@" 2>/dev/null && eza --no-quotes --group-directories-first --icons=auto; } || {
     echo "dir \e[91m$*\e[0m not found!! \e[91mSTUPID! BONK!\e[0m :3"
