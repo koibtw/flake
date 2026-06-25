@@ -3,6 +3,7 @@ let
   seber = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBAp82e57ij5x+Ei1Tjwxuex0fil5vV9wfEfNYgC5dFQ" ];
 in
 {
+  "irc-rx.pem.age".publicKeys = koi;
   "irc-password.age".publicKeys = koi;
   "jellyfin-rpc.json.age".publicKeys = koi;
   "washing-machien.env.age".publicKeys = koi;

@@ -13,8 +13,13 @@ let
   };
 in
 {
-  age.secrets.irc-password.file = ../../../secrets/irc-password.age;
+  age.secrets = {
+    irc-password.file = ../../../secrets/irc-password.age;
+    irc-rx-pem.file = ../../../secrets/irc-rx.pem.age;
+  };
+
   evergarden.halloy.enable = true;
+
   programs.halloy = {
     enable = true;
     settings = {
@@ -59,6 +64,10 @@ in
           server = "irc.runxiyu.org";
           nickname = "june";
           channels = [ "#chat" ];
+          sasl.external = {
+            cert = "/run/user/1001/agenix/irc-rx-pem";
+            disconnect_on_failure = true;
+          };
         }
         // metadata;
       };
