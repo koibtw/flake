@@ -55,6 +55,12 @@ in
           ];
         }
         // metadata;
+        rx = {
+          server = "irc.runxiyu.org";
+          nickname = "june";
+          channels = [ "#chat" ];
+        }
+        // metadata;
       };
     };
   };
