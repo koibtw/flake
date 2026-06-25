@@ -19,7 +19,7 @@ in
     enable = true;
     settings = {
       font = {
-        size = 15;
+        size = 16;
         family = "Maple Mono NF";
       };
       display = {
