@@ -28,7 +28,7 @@ in
 
     shellAliases = {
       cp = "cp -i";
-      nv = "nvim";
+      vi = "nvim";
       car = "cat";
       shred = "shred -uvz";
 
