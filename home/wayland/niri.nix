@@ -20,8 +20,8 @@ in
 
     input = {
       keyboard = {
-        repeat-delay = 180;
-        repeat-rate = 60;
+        repeat-delay = 160;
+        repeat-rate = 70;
         numlock = true;
       };
 
@@ -158,95 +158,73 @@ in
     hotkey-overlay.skip-at-startup = true;
 
     binds = {
-      "mod+shift+slash".action.show-hotkey-overlay = [ ];
+      "mod+k".action.spawn = [ "footclient" ];
+      "mod+m".action.spawn = [ "rofi" "-show" "drun" ];
 
-      "mod+return".action.spawn = [ "footclient" ];
-      "mod+shift+return".action.spawn = [
-        "rofi"
-        "-show"
-        "drun"
-      ];
+      "mod+comma".action.close-window = [ ];
+      "mod+backslash".action.show-hotkey-overlay = [ ];
+      "mod+q".action.quit = [ ];
 
-      "mod+tab".action.toggle-overview = [ ];
-      "mod+shift+c".action.close-window = [ ];
+      "alt+n".action.focus-column-left = [ ];
+      "alt+e".action.focus-window-down = [ ];
+      "alt+i".action.focus-window-up = [ ];
+      "alt+o".action.focus-column-right = [ ];
 
-      "mod+home".action.focus-column-first = [ ];
-      "mod+end".action.focus-column-last = [ ];
-      "mod+shift+home".action.move-column-to-first = [ ];
-      "mod+shift+end".action.move-column-to-last = [ ];
+      "alt+shift+n".action.move-column-left = [ ];
+      "alt+shift+e".action.move-window-down = [ ];
+      "alt+shift+i".action.move-window-up = [ ];
+      "alt+shift+o".action.move-column-right = [ ];
 
-      # TODO: make a loop for these
-      "mod+n".action.focus-column-left = [ ];
-      "mod+e".action.focus-window-down = [ ];
-      "mod+i".action.focus-window-up = [ ];
-      "mod+o".action.focus-column-right = [ ];
-      "mod+left".action.focus-column-left = [ ];
-      "mod+down".action.focus-window-down = [ ];
-      "mod+up".action.focus-window-up = [ ];
-      "mod+right".action.focus-column-right = [ ];
+      "alt+home".action.focus-column-first = [ ];
+      "alt+end".action.focus-column-last = [ ];
+      "alt+shift+home".action.move-column-to-first = [ ];
+      "alt+shift+end".action.move-column-to-last = [ ];
 
-      "mod+shift+n".action.move-column-left = [ ];
-      "mod+shift+e".action.move-window-down = [ ];
-      "mod+shift+i".action.move-window-up = [ ];
-      "mod+shift+o".action.move-column-right = [ ];
-      "mod+shift+left".action.move-column-left = [ ];
-      "mod+shift+down".action.move-window-down = [ ];
-      "mod+shift+up".action.move-window-up = [ ];
-      "mod+shift+right".action.move-column-right = [ ];
+      "alt+ctrl+n".action.consume-or-expel-window-left = [ ];
+      "alt+ctrl+e".action.consume-or-expel-window-right = [ ];
+      "alt+ctrl+i".action.consume-or-expel-window-left = [ ];
+      "alt+ctrl+o".action.consume-or-expel-window-right = [ ];
 
-      "mod+ctrl+n".action.focus-monitor-left = [ ];
-      "mod+ctrl+e".action.focus-monitor-down = [ ];
-      "mod+ctrl+i".action.focus-monitor-up = [ ];
-      "mod+ctrl+o".action.focus-monitor-right = [ ];
-      "mod+ctrl+left".action.focus-monitor-left = [ ];
-      "mod+ctrl+right".action.focus-monitor-right = [ ];
-      "mod+ctrl+up".action.focus-monitor-up = [ ];
-      "mod+ctrl+down".action.focus-monitor-down = [ ];
+      "alt+m".action.toggle-window-floating = [ ];
+      "alt+comma".action.switch-focus-between-floating-and-tiling = [ ];
 
-      "mod+l".action.focus-workspace-up = [ ];
-      "mod+u".action.focus-workspace-down = [ ];
-      "mod+page_up".action.focus-workspace-up = [ ];
-      "mod+page_down".action.focus-workspace-down = [ ];
+      "alt+u".action.switch-preset-column-width = [ ];
+      "alt+y".action.maximize-column = [ ];
 
-      "mod+shift+l".action.move-column-to-workspace-up = [ ];
-      "mod+shift+u".action.move-column-to-workspace-down = [ ];
-      "mod+shift+page_up".action.move-column-to-workspace-up = [ ];
-      "mod+shift+page_down".action.move-column-to-workspace-down = [ ];
+      "mod+l".action.expand-column-to-available-width = [ ];
+      "mod+u".action.fullscreen-window = [ ];
+      "mod+y".action.toggle-windowed-fullscreen = [ ];
 
-      # TODO: make a loop for these
-      "mod+1".action.focus-workspace = 1;
-      "mod+2".action.focus-workspace = 2;
-      "mod+3".action.focus-workspace = 3;
-      "mod+4".action.focus-workspace = "social";
-      "mod+0".action.focus-workspace = "social";
+      "alt+tab".action.toggle-overview = [ ];
 
-      "mod+shift+1".action.move-column-to-workspace = 1;
-      "mod+shift+2".action.move-column-to-workspace = 2;
-      "mod+shift+3".action.move-column-to-workspace = 3;
-      "mod+shift+4".action.move-column-to-workspace = "social";
-      "mod+shift+0".action.move-column-to-workspace = "social";
+      "mod+n".action.focus-workspace-up = [ ];
+      "mod+e".action.focus-workspace-down = [ ];
+      "mod+i".action.focus-workspace-up = [ ];
+      "mod+o".action.focus-workspace-down = [ ];
 
-      "mod+bracketleft".action.consume-or-expel-window-left = [ ];
-      "mod+bracketright".action.consume-or-expel-window-right = [ ];
+      "mod+shift+n".action.move-column-to-workspace-up = [ ];
+      "mod+shift+e".action.move-column-to-workspace-down = [ ];
+      "mod+shift+i".action.move-column-to-workspace-up = [ ];
+      "mod+shift+o".action.move-column-to-workspace-down = [ ];
 
-      "mod+f".action.maximize-column = [ ];
-      "mod+shift+f".action.fullscreen-window = [ ];
-      "mod+ctrl+f".action.expand-column-to-available-width = [ ];
-      "mod+r".action.switch-preset-column-width = [ ];
+      "alt+1".action.focus-workspace = 1;
+      "alt+2".action.focus-workspace = 2;
+      "alt+3".action.focus-workspace = 3;
+      "alt+4".action.focus-workspace = "social";
 
-      "mod+minus".action.set-column-width = "-10%";
-      "mod+equal".action.set-column-width = "+10%";
-      "mod+shift+minus".action.set-window-height = "-10%";
-      "mod+shift+equal".action.set-window-height = "+10%";
+      "mod+1".action.move-column-to-workspace = 1;
+      "mod+2".action.move-column-to-workspace = 2;
+      "mod+3".action.move-column-to-workspace = 3;
+      "mod+4".action.move-column-to-workspace = "social";
 
-      "mod+space".action.toggle-window-floating = [ ];
-      "mod+shift+space".action.switch-focus-between-floating-and-tiling = [ ];
+      "mod+ctrl+n".action.set-column-width = "-10%";
+      "mod+ctrl+e".action.set-window-height = "+10%";
+      "mod+ctrl+i".action.set-window-height = "-10%";
+      "mod+ctrl+o".action.set-column-width = "+10%";
 
       "print".action.screenshot = [ ];
       "shift+print".action.screenshot-window = [ ];
       "ctrl+print".action.screenshot-screen = [ ];
-
-      "mod+shift+q".action.quit = [ ];
     };
   };
 }
