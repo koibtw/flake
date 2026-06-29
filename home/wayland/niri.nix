@@ -207,15 +207,15 @@ in
       "mod+shift+i".action.move-column-to-workspace-up = [ ];
       "mod+shift+o".action.move-column-to-workspace-down = [ ];
 
-      "alt+1".action.focus-workspace = 1;
-      "alt+2".action.focus-workspace = 2;
-      "alt+3".action.focus-workspace = 3;
-      "alt+4".action.focus-workspace = "social";
+      "mod+1".action.focus-workspace = 1;
+      "mod+2".action.focus-workspace = 2;
+      "mod+3".action.focus-workspace = 3;
+      "mod+4".action.focus-workspace = "social";
 
-      "mod+1".action.move-column-to-workspace = 1;
-      "mod+2".action.move-column-to-workspace = 2;
-      "mod+3".action.move-column-to-workspace = 3;
-      "mod+4".action.move-column-to-workspace = "social";
+      "mod+shift+1".action.move-column-to-workspace = 1;
+      "mod+shift+2".action.move-column-to-workspace = 2;
+      "mod+shift+3".action.move-column-to-workspace = 3;
+      "mod+shift+4".action.move-column-to-workspace = "social";
 
       "mod+ctrl+n".action.set-column-width = "-10%";
       "mod+ctrl+e".action.set-window-height = "+10%";
