@@ -7,6 +7,7 @@
       ".jj"
       ".zig-cache"
       "zig-out"
+      "zig-pkg"
       "target"
       "result"
       "bin"
