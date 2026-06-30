@@ -7,7 +7,7 @@
     alt="mimi the car (my website)"
     align="right">
 </a>
-<b>my dotfiles</b>
+<b>my flake</b>
 </div>
 
 <div align="center">

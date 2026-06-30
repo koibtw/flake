@@ -1,11 +1,11 @@
 function nixos-rebuild() {
   # https://github.com/NixOS/nixpkgs/issues/275018
-  doas /run/current-system/sw/bin/nixos-rebuild --no-reexec --flake "$HOME/dotfiles#$(hostname)" --log-format internal-json -v "$@" |& nom --json
+  doas /run/current-system/sw/bin/nixos-rebuild --no-reexec --flake "$HOME/flake#$(hostname)" --log-format internal-json -v "$@" |& nom --json
 }
 
 function nixos-rebuild-seber() {
   # https://github.com/NixOS/nixpkgs/issues/275018
-  /run/current-system/sw/bin/nixos-rebuild --no-reexec --flake "$HOME/dotfiles#seber" --log-format internal-json -v --sudo --target-host seber "$@" |& nom --json
+  /run/current-system/sw/bin/nixos-rebuild --no-reexec --flake "$HOME/flake#seber" --log-format internal-json -v --sudo --target-host seber "$@" |& nom --json
 }
 
 function nixpkgs-build() {

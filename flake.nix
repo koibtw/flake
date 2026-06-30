@@ -1,5 +1,5 @@
 {
-  description = "my nixos dotfiles :3";
+  description = "my nixos flake :3";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
