@@ -47,7 +47,7 @@
           "--fetch-tags=none"
           "--branch"
         ];
-        update = [
+        set = [
           "bookmark"
           "move"
           "--to=first_parent(@)"
