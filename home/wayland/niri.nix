@@ -158,44 +158,49 @@ in
     hotkey-overlay.skip-at-startup = true;
 
     binds = {
-      "mod+k".action.spawn = [ "footclient" ];
-      "mod+m".action.spawn = [ "rofi" "-show" "drun" ];
+      "alt+c".action.close-window = [ ];
+      "alt+tab".action.toggle-overview = [ ];
 
-      "mod+comma".action.close-window = [ ];
-      "mod+backslash".action.show-hotkey-overlay = [ ];
-      "mod+q".action.quit = [ ];
+      "alt+backslash".action.show-hotkey-overlay = [ ];
+      "alt+bracketright".action.quit = [ ];
+
+      "alt+k".action.spawn = [ "footclient" ];
+      "alt+h".action.spawn = [ "rofi" "-show" "drun" ];
+
+      "alt+m".action.toggle-window-floating = [ ];
+      "alt+comma".action.switch-focus-between-floating-and-tiling = [ ];
+
+      "alt+l".action.expand-column-to-available-width = [ ];
+
+      "alt+u".action.switch-preset-column-width = [ ];
+      "alt+y".action.maximize-column = [ ];
+      "alt+shift+y".action.fullscreen-window = [ ];
+      "alt+ctrl+y".action.toggle-windowed-fullscreen = [ ];
 
       "alt+n".action.focus-column-left = [ ];
       "alt+e".action.focus-window-down = [ ];
       "alt+i".action.focus-window-up = [ ];
       "alt+o".action.focus-column-right = [ ];
 
-      "alt+shift+n".action.move-column-left = [ ];
-      "alt+shift+e".action.move-window-down = [ ];
-      "alt+shift+i".action.move-window-up = [ ];
-      "alt+shift+o".action.move-column-right = [ ];
-
       "alt+home".action.focus-column-first = [ ];
       "alt+end".action.focus-column-last = [ ];
       "alt+shift+home".action.move-column-to-first = [ ];
       "alt+shift+end".action.move-column-to-last = [ ];
+
+      "alt+shift+n".action.move-column-left = [ ];
+      "alt+shift+e".action.move-window-down = [ ];
+      "alt+shift+i".action.move-window-up = [ ];
+      "alt+shift+o".action.move-column-right = [ ];
 
       "alt+ctrl+n".action.consume-or-expel-window-left = [ ];
       "alt+ctrl+e".action.consume-or-expel-window-right = [ ];
       "alt+ctrl+i".action.consume-or-expel-window-left = [ ];
       "alt+ctrl+o".action.consume-or-expel-window-right = [ ];
 
-      "alt+m".action.toggle-window-floating = [ ];
-      "alt+comma".action.switch-focus-between-floating-and-tiling = [ ];
-
-      "alt+u".action.switch-preset-column-width = [ ];
-      "alt+y".action.maximize-column = [ ];
-
-      "mod+l".action.expand-column-to-available-width = [ ];
-      "mod+u".action.fullscreen-window = [ ];
-      "mod+y".action.toggle-windowed-fullscreen = [ ];
-
-      "alt+tab".action.toggle-overview = [ ];
+      "mod+1".action.focus-workspace = 1;
+      "mod+2".action.focus-workspace = 2;
+      "mod+3".action.focus-workspace = 3;
+      "mod+4".action.focus-workspace = "social";
 
       "mod+n".action.focus-workspace-up = [ ];
       "mod+e".action.focus-workspace-down = [ ];
@@ -207,20 +212,10 @@ in
       "mod+shift+i".action.move-column-to-workspace-up = [ ];
       "mod+shift+o".action.move-column-to-workspace-down = [ ];
 
-      "mod+1".action.focus-workspace = 1;
-      "mod+2".action.focus-workspace = 2;
-      "mod+3".action.focus-workspace = 3;
-      "mod+4".action.focus-workspace = "social";
-
       "mod+shift+1".action.move-column-to-workspace = 1;
       "mod+shift+2".action.move-column-to-workspace = 2;
       "mod+shift+3".action.move-column-to-workspace = 3;
       "mod+shift+4".action.move-column-to-workspace = "social";
-
-      "mod+ctrl+n".action.set-column-width = "-10%";
-      "mod+ctrl+e".action.set-window-height = "+10%";
-      "mod+ctrl+i".action.set-window-height = "-10%";
-      "mod+ctrl+o".action.set-column-width = "+10%";
 
       "print".action.screenshot = [ ];
       "shift+print".action.screenshot-window = [ ];
