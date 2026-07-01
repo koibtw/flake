@@ -35,11 +35,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1782384993,
-        "narHash": "sha256-6NgTb5iwLjoWTE1MEQg2bGefk8qajX71QV5Me3/dkvg=",
+        "lastModified": 1782752704,
+        "narHash": "sha256-tVPVRiNs2s5QQcRBlCWA39IRLmCflrzF37JOHctwGNo=",
         "ref": "refs/heads/main",
-        "rev": "b553ed6a20d28d786f3e37f7ed0027d3e6d858a0",
-        "revCount": 88,
+        "rev": "5ef4c1e559083e4cbbf6785bd154b5c57a1e9b51",
+        "revCount": 90,
         "type": "git",
         "url": "https://git.koi.rip/koi/anvim"
       },
@@ -158,11 +158,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1782301706,
-        "narHash": "sha256-b/XG4Wg5oVJlySZOC4cmWnKMeDTtp/Hm9swWDTGAUf0=",
+        "lastModified": 1782998247,
+        "narHash": "sha256-scVjwUEVo7RniA/8y+2zr99NbTsc+4VzhMi5NzAVISE=",
         "ref": "refs/heads/main",
-        "rev": "07e2c4304128392e1a61e0affa0edbbdb9af9ca8",
-        "revCount": 38,
+        "rev": "33bd0b93f6a8b11d294bcb9b16a85aa0a3fa61da",
+        "revCount": 43,
         "type": "git",
         "url": "https://git.koi.rip/koi/meowtd.git"
       },
