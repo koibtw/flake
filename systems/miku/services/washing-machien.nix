@@ -1,4 +1,5 @@
 {
+  lib,
   inputs,
   config,
   pkgs,
@@ -20,4 +21,6 @@ in
     input = pfp;
     environmentFile = config.age.secrets.washing-machien-env.path;
   };
+
+  systemd.timers.washing-machien.timerConfig.OnCalendar = lib.mkForce "*:0/4";
 }
