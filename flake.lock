@@ -256,30 +256,9 @@
         "meowtd": "meowtd",
         "niri": "niri",
         "nixpkgs": "nixpkgs",
-        "seberjune": "seberjune",
         "systems": "systems",
         "washing-machien": "washing-machien",
         "zen-browser": "zen-browser"
-      }
-    },
-    "seberjune": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1777230563,
-        "narHash": "sha256-CfRzXht+VyX66U6W4KGrTG3FXiwA+PUmP5R9Ckt+IXc=",
-        "ref": "refs/heads/main",
-        "rev": "d696f609ac22f20323933707d33d5479b7113e80",
-        "revCount": 5,
-        "type": "git",
-        "url": "https://git.koi.rip/koi/seberjune.git"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://git.koi.rip/koi/seberjune.git"
       }
     },
     "systems": {

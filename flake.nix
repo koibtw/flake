@@ -25,11 +25,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    seberjune = {
-      url = "git+https://git.koi.rip/koi/seberjune.git";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     evergarden = {
       url = "git+https://codeberg.org/evergarden/nix";
       inputs.nixpkgs.follows = "nixpkgs";
