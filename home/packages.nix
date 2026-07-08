@@ -16,6 +16,8 @@
     pkgs.inkscape
     pkgs.gimp
 
+    (pkgs.olympus.override { celesteWrapper = "steam-run"; })
+
     pkgs.noto-fonts
     pkgs.noto-fonts-cjk-sans
     pkgs.noto-fonts-color-emoji
