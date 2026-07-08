@@ -4,7 +4,6 @@
   modulesPath,
   ...
 }:
-
 {
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
@@ -57,7 +56,7 @@
     LIBVA_DRIVER_NAME = "nvidia";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
 
-    VK_DRIVER_FILES = "/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.x86_64.json";
+    VK_DRIVER_FILES = "/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.json:/run/opengl-driver-32/share/vulkan/icd.d/nvidia_icd.json";
 
     # QtWebEngine 6.10.2 incorrectly detects GBM as unsupported and falls back to Vulkan which
     # breaks Chromium applications. See https://github.com/NixOS/nixpkgs/issues/508998
