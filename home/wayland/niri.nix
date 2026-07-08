@@ -165,7 +165,11 @@ in
       "alt+bracketright".action.quit = [ ];
 
       "alt+k".action.spawn = [ "footclient" ];
-      "alt+h".action.spawn = [ "rofi" "-show" "drun" ];
+      "alt+h".action.spawn = [
+        "rofi"
+        "-show"
+        "drun"
+      ];
 
       "alt+m".action.toggle-window-floating = [ ];
       "alt+comma".action.switch-focus-between-floating-and-tiling = [ ];
