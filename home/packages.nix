@@ -14,7 +14,6 @@
     pkgs.signal-desktop
 
     pkgs.inkscape
-    pkgs.gimp
 
     (pkgs.olympus.override { celesteWrapper = "steam-run"; })
 
