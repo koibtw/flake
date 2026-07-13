@@ -8,6 +8,7 @@
 
     # web
     ./vesktop.nix
+    ./spicetify.nix
     ./zen-browser.nix
 
     # communication
