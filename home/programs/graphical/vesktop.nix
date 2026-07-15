@@ -44,6 +44,7 @@ in
             enabled = true;
             agreedToGuidelines = true;
           };
+          DisableCallIdle.enabled = true;
           Experiments.enabled = true;
           ExpressionCloner.enabled = true;
           FakeNitro = {
