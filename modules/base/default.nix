@@ -1,8 +1,5 @@
-{ inputs, ... }:
 {
   imports = [
-    inputs.agenix.nixosModules.default
-
     ./boot.nix
     ./console.nix
     ./security.nix
@@ -10,6 +7,7 @@
     ./environment.nix
     ./nixpkgs.nix
     ./nix.nix
+    ./age.nix
     ./system.nix
     ./users
     ./programs
