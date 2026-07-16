@@ -1,7 +1,5 @@
 {
-  config,
   lib,
-  pkgs,
   modulesPath,
   ...
 }:
@@ -20,6 +18,11 @@
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
+  boot.loader.grub = {
+    enable = true;
+    device = "/dev/vda";
+  };
+
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/9bc4dce8-4cbe-49e2-bd9f-12542c3361fe";
     fsType = "ext4";
@@ -29,11 +32,7 @@
     ];
   };
 
-  swapDevices = [
-    { device = "/dev/disk/by-uuid/3a56df3a-5226-4016-8ba0-ddd979c60c8c"; }
-  ];
-
-  networking.useDHCP = lib.mkDefault true;
+  swapDevices = [ { device = "/dev/disk/by-uuid/3a56df3a-5226-4016-8ba0-ddd979c60c8c"; } ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 }
