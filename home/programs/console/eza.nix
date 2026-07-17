@@ -5,6 +5,9 @@
     extraOptions = [
       "--no-quotes"
       "--group-directories-first"
+      "--icons=auto"
+      "--group"
+      "--git"
     ];
     icons = "auto";
   };
