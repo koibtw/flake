@@ -11,10 +11,18 @@
       isDefault = true;
       search = {
         force = true;
-        default = "ddg";
+        default = "fluff4";
         engines = {
+          fluff4 = {
+            name = "fluff4";
+            definedAliases = [ "@fluff4" "@4get" ];
+            urls = [
+              { template = "https://4get.leaffish-crocodile.ts.net/web?s={searchTerms}"; }
+            ];
+            iconMapObj."32" = "https://4get.leaffish-crocodile.ts.net/favicon.ico";
+          };
           alpine = {
-            name = "Aplpine Packages";
+            name = "Alpine Packages";
             definedAliases = [ "@alpine" ];
             urls = [
               { template = "https://pkgs.alpinelinux.org/packages?name={searchTerms}&branch=edge&repo=&arch="; }
